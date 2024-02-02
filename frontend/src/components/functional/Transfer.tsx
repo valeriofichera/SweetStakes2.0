@@ -1,35 +1,23 @@
-import { useState } from 'react';
-import { LOTTERY_CONTRACT_ADDRESS } from './constants';
+import { LOTTERY_CONTRACT_ADDRESS, LOTTERY_CONTRACT_ABI } from './constants';
 import { useSendTransaction } from 'wagmi';
-import { parseEther } from 'viem'; // Assuming 'viem' is a typo or a project-specific alias for 'ethers'
+import { parseEther } from 'viem';
 
-const Deposit = () => {
-  const [amount, setAmount] = useState('');
+const Transfer = () => {
 
   const { data, isLoading, isSuccess, sendTransaction } = useSendTransaction({
-    to: LOTTERY_CONTRACT_ADDRESS,
-    value: parseEther(amount),
-  });
-
+    to: 'vitalik.eth',
+    value: parseEther('0.1'),
+  })
   return (
     <div>
-      <input
-        type="text"
-        value={amount}
-        onChange={(e) => setAmount(e.target.value)}
-        placeholder="Amount in WEI"
-        className="mb-4 pr-[-15px] p-2 rounded border"
-      />
       <button
-        className="bg-[#956bd0] hover:bg-slate-500 text-white font-bold py-2 px-4 rounded ml-5"
-        onClick={() => sendTransaction()}
-      >
-        Send Transaction
-      </button>
+      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-7"
+      onClick={() => sendTransaction()}>Send Transaction</button>
       {isLoading && <div>Check Wallet</div>}
       {isSuccess && <div>Transaction: {JSON.stringify(data)}</div>}
     </div>
+    
   );
 };
 
-export default Deposit;
+export default Transfer;

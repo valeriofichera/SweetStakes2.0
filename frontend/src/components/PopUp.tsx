@@ -1,6 +1,6 @@
 import React from "react"
 import logo from '../assets/logo.svg';
-import Transfer from "../components/functional/Transfer.tsx";
+import Transfer from "./functional/Transfer";
 function Popup() {
 
 	return (

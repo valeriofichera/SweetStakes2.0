@@ -3,6 +3,7 @@ import Chart from './Chart';
 import logo from '../../assets/logo.svg';
 import Probability from '../functional/Probability';
 import XP from '../functional/XP';
+import Balance from '../functional/Balance';
 function MainBox() {
 
   return (
@@ -51,9 +52,9 @@ function MainBox() {
                           <img className='h-12' src={logo} alt="" />
                           1ETH
                           </div>
-                          <div className="flex flex-col">
+                          <div className="flex flex-col font-bold text-lg ml-24">
                           <img className='h-12' src={logo} alt="" />
-                              <XP/>XP                         
+                              <Balance/>                         
                            </div>
                         </div>
                       </div>
