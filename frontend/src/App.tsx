@@ -47,7 +47,7 @@ function App() {
 	)
 
 	const { connectors } = getDefaultWallets({
-		appName: "Firewall Demo",
+		appName: "SweetStakes 2.0",
 		chains,
 	})
 
