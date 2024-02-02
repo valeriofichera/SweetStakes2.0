@@ -1,0 +1,8 @@
+{
+	"31337": {
+		"firewalledProtocol": "0x2d13826359803522cCe7a4Cfa2c1b582303DD0B4",
+		"nonFirewalledProtocol": "0xCa57C1d3c2c35E667745448Fef8407dd25487ff8",
+		"turtleShellFirewall": "0xB7ca895F81F20e05A5eb11B05Cbaab3DAe5e23cd",
+		"usdc": "0xd0EC100F1252a53322051a95CF05c32f0C174354"
+	}
+}

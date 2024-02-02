@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'animate.css';
+  
+
+.fadeInLeft{
+    animation: fadeInLeft 2s;
+}
+
+.fadeInRight{
+    animation: fadeInRight 2s;
+}
+
+
+.fadeInUp{
+    animation: fadeInUp 2s;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+
+  .animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .mobile_nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 5xl;
+    z-index: 40;
+    transition-duration: 1000ms;
+  }
+  
+
+  .show {
+    transform: translateX(0) to translateX(100%);
+    background-color: blueviolet;
+  }
+
+  .in-viewport {
+    animation: fadeInLeft 22s;
+  }

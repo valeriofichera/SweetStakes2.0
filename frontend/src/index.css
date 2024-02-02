@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+@layer base {
+  html {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    line-height: 1.5;
+  }
+
+  body {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/bg.svg');
+    background-size: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .background-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('./assets/bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
