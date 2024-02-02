@@ -5,8 +5,27 @@ function MainBox() {
 
     <div className='grid grid-cols-12  items-center justify-center text-center '>
 
+      <div className='col-start-1 col-span-7 text-left mt-12 mb-12'>
+        <div className="text-black text-xl">
+          <div className='font-bold'>Welcome to Sweetstakes, your decentralized gaming experience.</div>
+          <div className="font-base text-base">
+          You have to enter a pod, your winning chances are determined by the value you put in vs. others.
+          </div>
+        </div>
+      </div>
 
-    <div className='col-start-3 col-span-8 rounded-lg border border-gray-200 bg-white shadow-md p-5'>
+      <div className="col-start-5 col-span-8 rounded-lg border border-gray-200 bg-white shadow-md ">
+					<div className="text-black border-b border-slate-800/40 ">123</div>
+					<div className="flex flex-row items-center justify-center gap-3 py-2">
+						<div className="text-slate-800 font-bold">123</div>
+						<div className="text-slate-800 text-lg">
+						
+						</div>
+					</div>
+				</div>
+
+
+    {/* <div className='col-start-3 col-span-8 rounded-lg border border-gray-200 bg-white shadow-md p-5'>
 
     <div className='grid grid-cols-8'>
 
@@ -33,17 +52,9 @@ function MainBox() {
 
       </div>
 
-      </div>
+      </div> */}
 
-      <div className='col-start-4 col-span-6 text-left mt-12'>
-        <div className="text-slate-500">
-          <div className='font-bold'>About</div>
-          <div className="font-base">
-              We recreated the Hundred Finance hack of March, to showcase how TurtleShell
-              could have been able to prevent $6 million from being stolen.
-          </div>
-        </div>
-      </div>
+     
 
 
 </div>
