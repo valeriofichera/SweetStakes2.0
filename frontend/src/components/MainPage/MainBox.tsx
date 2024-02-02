@@ -2,7 +2,6 @@ import Button from '../Button';
 import Chart from './Chart';
 import logo from '../../assets/logo.svg';
 import Probability from '../functional/Probability';
-import XP from '../functional/XP';
 import Balance from '../functional/Balance';
 function MainBox() {
 
