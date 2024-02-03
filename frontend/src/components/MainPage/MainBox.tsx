@@ -5,6 +5,7 @@ import ethlogo from '../../assets/ethlogo.png';
 import Probability from '../functional/Probability';
 import Balance from '../functional/Balance';
 import { Total } from '../functional/Total';
+import ProcessWinner from '../functional/ProcessWinner';
 function MainBox() {
 
   return (
@@ -118,6 +119,7 @@ function MainBox() {
           </div>
 
           <Button/>
+          <ProcessWinner/>
 				</div>
 
 

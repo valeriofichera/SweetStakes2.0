@@ -1,6 +1,8 @@
 import React from "react"
 import logo from '../assets/logo.svg';
-import Transfer from "./functional/Transfer";
+import Deposit from "./functional/Deposit";
+import Approve from "./functional/Approve_XP";
+import { LOTTERY_CONTRACT_ADDRESS } from '../components/functional/constants';
 function Popup() {
 
 	return (
@@ -15,9 +17,10 @@ function Popup() {
             deposit ETH or XP into the Jackpot.
           </div>
 
-		  <div className="self-stretch relative flex flex-row items-center justify-start gap-[16px]">
-			  
-			  <Transfer />
+		  <div className="self-stretch relative flex flex-col items-center justify-start gap-[16px]">
+			  <Approve />
+			  {/* <Deposit /> */}
+			  Deposit funds to: <br/> <span className="underline mt-[-15px] mb-[-40px]">{LOTTERY_CONTRACT_ADDRESS}</span> <br/> the more you deposit, the higher your chances of winning!
 		
 		</div>
         </div>

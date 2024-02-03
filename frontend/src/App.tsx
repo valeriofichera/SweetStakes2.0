@@ -10,35 +10,37 @@ import { mainnet, goerli, hardhat } from "wagmi/chains"
 import { publicProvider } from "wagmi/providers/public"
 
 function App() {
-	// const mantleTestnet: Chain = {
-	// 	id: 31337,
-	// 	name: "Mantle Testnet",
-	// 	network: "hardhat",
-	// 	iconUrl: "https://s2.coinmarketcap.com/static/img/coins/64x64/27075.png",
-	// 	iconBackground: "#000000",
-	// 	nativeCurrency: {
-	// 		decimals: 18,
-	// 		name: "Mantle Testnet Token",
-	// 		symbol: "MNT-T",
-	// 	},
-	// 	rpcUrls: {
-	// 		default: {
-	// 			http: ["http://127.0.0.1:8545"],
-	// 		},
-	// 		public: {
-	// 			http: [],
-	// 			webSocket: undefined,
-	// 		},
-	// 	},
-	// 	blockExplorers: {
-	// 		default: { name: "Testnet Explorer", url: "https://explorer.testnet.mantle.xyz/" },
-	// 		etherscan: { name: "SnowTrace", url: "https://snowtrace.io" },
-	// 	},
-	// 	testnet: true,
-	// }
+
+	const pegasus: Chain = {
+		id: 1891,
+		name: 'Lightlink Pegasus',
+		network: 'pegasus',
+		iconUrl: 'https://faucet.pegasus.lightlink.io/faucet.png',
+		iconBackground: '#fff',
+		nativeCurrency: {
+		  decimals: 18,
+		  name: 'ether',
+		  symbol: 'ETH',
+		},
+		rpcUrls: {
+		  public: { http: ['https://replicator.pegasus.lightlink.io/rpc/v1'] },
+		  default: { http: ['https://replicator.pegasus.lightlink.io/rpc/v1'] },
+		},
+		blockExplorers: {
+		  default: { name: 'SnowTrace', url: 'https://snowtrace.io' },
+		  etherscan: { name: 'SnowTrace', url: 'https://snowtrace.io' },
+		},
+		contracts: {
+		  multicall3: {
+			address: '0xca11bde05977b3631167028862be2a173976ca11',
+			blockCreated: 11_907_934,
+		  },
+		},
+		testnet: false,
+	  };
 
 	const { chains, provider } = configureChains(
-		[mainnet, goerli, hardhat],
+		[mainnet, goerli, hardhat, pegasus],
 		[publicProvider()]
 	)
 

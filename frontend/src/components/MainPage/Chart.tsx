@@ -2,25 +2,7 @@
 import React, { PureComponent } from 'react';
 import { PieChart, Pie, Cell } from 'recharts';
 
-import { useContractRead } from 'wagmi';
-import { ethers } from 'ethers';
-import { LOTTERY_CONTRACT_ADDRESS, LOTTERY_CONTRACT_ABI } from '../functional/constants';
 
-
-
-export function total() {
-  const { data, isError, isLoading } = useContractRead({
-    address: LOTTERY_CONTRACT_ADDRESS,
-    abi: LOTTERY_CONTRACT_ABI,
-    functionName: 'total',
-  });
-
-  if (isLoading) return <div>Loading...</div>;
-  if (isError) return <div>Error loading the total</div>;
-
-  return(
-        console.log(data)
-        );}
 
 const RADIAN = Math.PI / 180;
 const data = [
