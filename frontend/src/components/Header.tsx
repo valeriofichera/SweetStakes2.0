@@ -21,16 +21,16 @@ function Header() {
 
         
      
-        <div className='col-start-7 col-span-1 text-center p-2 hover:shadow-xl hover:bg-slate-700 hover:text-slate-500 font-extrabold text-black rounded-md'>
+        <div className='col-start-7 col-span-1 text-center p-2 font-extrabold text-black rounded-md'>
             <div className="flex flex-row gap-2">Level <UserLevels/></div>
         </div>
-        <div className='col-start-8 col-span-1 text-center p-2 hover:shadow-xl hover:bg-slate-700 hover:text-slate-500 font-extrabold text-black rounded-md'>
+        <div className='col-start-8 col-span-1 text-center p-2 font-extrabold text-black rounded-md'>
             <div className="text-slate-400 font-light text-5xl">|</div>
         </div>
-        <div className='col-start-9 col-span-1 text-center p-2 hover:shadow-xl hover:bg-slate-700 hover:text-slate-500 font-extrabold text-black rounded-md'>
+        <div className='col-start-9 col-span-1 text-center p-2 font-extrabold text-black rounded-md'>
             <div className="flex flex-row gap-2"><Balance/></div>
         </div>
-        <div className='col-start-10 col-span-1 text-center p-2 hover:shadow-xl hover:bg-slate-700 hover:text-slate-500 font-extrabold text-black rounded-md'>
+        <div className='col-start-10 col-span-1 text-center p-2  font-extrabold text-black rounded-md'>
             <div className="text-slate-400 font-light text-5xl">|</div>
         </div>
         <div className="col-start-11 col-span-5 p-2 m-5">

@@ -1,8 +1,10 @@
 import Button from '../Button';
 import Chart from './Chart';
 import logo from '../../assets/logo.svg';
+import ethlogo from '../../assets/ethlogo.png';
 import Probability from '../functional/Probability';
 import Balance from '../functional/Balance';
+import { Total } from '../functional/Total';
 function MainBox() {
 
   return (
@@ -48,7 +50,7 @@ function MainBox() {
                       <div className="self-stretch flex flex-row items-start justify-start gap-[16px]">
                         <div className='flex flex-row'>
                           <div className="flex flex-col">
-                          <img className='h-12' src={logo} alt="" />
+                          <img className='h-12' src={ethlogo} alt="" />
                           1ETH
                           </div>
                           <div className="flex flex-col font-bold text-lg ml-24">
@@ -111,8 +113,8 @@ function MainBox() {
 
           100% of the pot has been reached
 
-          <div className="text-slate-800 text-xl mb-3">
-          Total Jackpot: 1.00 ETH
+          <div className="text-slate-800 text-xl mb-3 flex flex-row gap-1">
+          Total Jackpot: <Total/> ETH
           </div>
 
           <Button/>
