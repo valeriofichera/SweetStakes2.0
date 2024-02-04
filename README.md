@@ -27,3 +27,6 @@ https://pegasus.lightlink.io/address/0x2Ea283d4E0aaf731b1950Ed2a9F54607Ed925012
 ### XP Token Contract:
 https://pegasus.lightlink.io/address/0xA1E32a89b26DAF53AaB3C5DF61a8A3705fA819D2
 
+### Demo Video:
+https://www.loom.com/share/d0fab30b03a5470dbc5171392ba1d832
+
