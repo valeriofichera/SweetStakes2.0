@@ -2,5 +2,5 @@
 # SweetStakes 2.0
 
 
-## What is PPP
- Peer Push Protocol (PPP) is a decentralized marketplace for push notifications
+## What is SweetStakes 2.0
+
