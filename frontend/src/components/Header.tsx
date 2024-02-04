@@ -1,4 +1,4 @@
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo.png';
 import { WalletBtn } from './WalletBtn';
 import Balance from './functional/Balance';
 import UserLevels from './functional/UserLevels';
