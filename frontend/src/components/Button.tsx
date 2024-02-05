@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Popup from './Popup.tsx';
-
 function Button() {
   const [isOpen, setIsOpen] = useState(false);
 
